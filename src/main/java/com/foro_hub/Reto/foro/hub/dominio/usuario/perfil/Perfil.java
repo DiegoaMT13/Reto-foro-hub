@@ -27,12 +27,20 @@ public class Perfil {
     @Enumerated(EnumType.STRING) // Indicamos que se almacenará como texto en la base de datos
     private TipoPerfil perfil; // Cambiamos el tipo del atributo a TipoPerfil
 
-    // Constructor correcto con Usuario, nombre y TipoPerfil
+//    // Constructor correcto con Usuario, nombre y TipoPerfil
+//    public Perfil(Usuario usuario, TipoPerfil perfil) {
+//        this.usuario = usuario;
+//        this.perfil = perfil;
+//        if (usuario != null) {
+//            usuario.setPerfil(this.toString());
+//        }
+//    }
     public Perfil(Usuario usuario, TipoPerfil perfil) {
         this.usuario = usuario;
         this.perfil = perfil;
         if (usuario != null) {
-            usuario.setPerfil(this.toString());
+            // Asigna directamente el nombre del perfil
+            usuario.setPerfil(perfil.name());
         }
     }
 

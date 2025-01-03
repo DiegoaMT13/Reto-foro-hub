@@ -54,7 +54,7 @@ public class RespuestaController {
                                                 UriComponentsBuilder uriBuilder,
                                                 Authentication authentication) {
         try {
-            // Ejecutamos todos los validadores, incluyendo el de respuestas duplicadas y el de máximo de respuestas
+            // Ejecutamos todos los validadores
             validadores.forEach(v -> v.validar(datos, authentication.getName()));
 
             // Obtener el usuario autenticado
@@ -70,16 +70,13 @@ public class RespuestaController {
 
             // Verificamos que el usuario autenticado coincida con el usuario que desea registrar la respuesta
             if (!usuario.getLogin().equals(loginUsuarioAutenticado)) {
-                return ResponseEntity.status(HttpStatus.FORBIDDEN).body("No tiene permisos. Usuario incorrecto.");
+                String errorMessage = "Error al registrar respuesta: El usuario autenticado no coincide con el usuario asociado a la respuesta.";
+                throw new ResponseStatusException(HttpStatus.FORBIDDEN, errorMessage);
             }
 
-            // Creamos la nueva respuesta usando el constructor
+            // Creamos la nueva respuesta
             Respuesta respuesta = new Respuesta(datos, topico, usuario, true);
-
-            // Establecemos el mensaje de solución si está presente
             respuesta.setMensajeSolucion(datos.mensajeSolucion());
-
-            // Guardamos la respuesta en el repositorio
             respuestaRepository.save(respuesta);
 
             // Creamos la URI para la nueva respuesta
@@ -94,11 +91,16 @@ public class RespuestaController {
                     respuesta.getFechaCreacion(),
                     respuesta.getMensajeSolucion()
             ));
+        } catch (ResponseStatusException e) {
+            // Retorna el mensaje específico de la excepción ResponseStatusException
+            return ResponseEntity.status(e.getStatusCode()).body(e.getReason());
         } catch (Exception e) {
-            System.err.println("Error al registrar respuesta: " + e.getMessage());
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Error al registrar la respuesta.");
+            // Retorna el mensaje completo para otras excepciones
+            String errorMessage = "Error al registrar respuesta: " + e.getMessage();
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errorMessage);
         }
     }
+    
     @GetMapping("/listar")
     public ResponseEntity<Page<DatosListarRespuesta>> listarRespuestas(
             @PageableDefault(page = 0, size = 10, sort = {"fechaCreacion"}) Pageable paginacion,

@@ -65,5 +65,9 @@ public interface EstadisticasQuery extends JpaRepository<Topico, Long> {
 """)
     List<Topico> findTopicsWithoutResponsesOlderThan(java.time.LocalDateTime fechaLimite);
 
+
+    @Query("SELECT c.statusPregunta, COUNT(c) FROM Topico c GROUP BY c.statusPregunta")
+    List<Object[]> countCursosByCategoria();
+
 }
 

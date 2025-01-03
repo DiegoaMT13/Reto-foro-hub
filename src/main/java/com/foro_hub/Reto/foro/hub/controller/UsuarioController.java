@@ -55,8 +55,9 @@ public class UsuarioController {
                 throw new PerfilNoValidoException("El perfil proporcionado no es válido: " + datos.perfil());
             }// Convertimos el String a TipoPerfil
 
-        Perfil perfil = new Perfil(usuario, tipoPerfil); // Creamos el perfil
-        perfilRepository.save(perfil); // Guardamos el perfil
+            Perfil perfil = new Perfil(usuario, tipoPerfil); // Creamos el perfil
+            perfilRepository.save(perfil); // Guardamos el perfil
+
 
         // Crear respuesta con los datos del usuario
         DatosRespuestaUsuario datosRespuestaUsuario = new DatosRespuestaUsuario(

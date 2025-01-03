@@ -53,6 +53,8 @@ public class Topico {
     private List<Respuesta> respuestas = new ArrayList<>();
 
 
+
+
     public Topico(Long id, String titulo, Boolean activo) {
         this.id = id;
         this.titulo = titulo;
@@ -111,19 +113,19 @@ public class Topico {
         this.activo = activo;
     }
 
+
+    public boolean isActivo() {
+        return this.activo != null && this.activo; // Devuelve true si activo no es null y es true
+    }
     public void inactivar() {
         this.activo = false;
     }
-
 
     public void setCursos(List<Curso> cursos) {
         this.cursos = cursos;
     }
 
-    public boolean isActivo() {
 
-        return false;
-    }
 
 }
 

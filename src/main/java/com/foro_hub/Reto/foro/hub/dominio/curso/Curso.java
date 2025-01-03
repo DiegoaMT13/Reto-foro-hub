@@ -28,13 +28,10 @@ public class Curso {
     private CategoriaCurso curso;
 
 
-    @Enumerated(EnumType.STRING)
-    @Column(name = "categoria")
-    private StatusPregunta statusPregunta;
 
     public Curso(Topico topico, CategoriaCurso curso, StatusPregunta categoria) {
         this.topico = topico;
         this.curso = curso;
-        this.statusPregunta= categoria;
+
     }
 }
