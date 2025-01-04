@@ -10,7 +10,15 @@
 - Se caracteriza por sus reglas de negocio o validaciones.
 - Se caracteriza por sus test automaticos.
 - Diagrama base de datos ForoHud.
- <div align="center"><img src="https://raw.githubusercontent.com/DiegoaMT13/Reto-foro-hub/refs/heads/main/src/main/java/com/foro_hub/Reto/foro/hub/img/img.png?token=GHSAT0AAAAAAC36ATTACZTXKOL36BVFY7NMZ3YUFVA/></div>
+ <div align="center"><img src="https://raw.githubusercontent.com/DiegoaMT13/Reto-foro-hub/refs/heads/main/src/main/java/com/foro_hub/Reto/foro/hub/img/img.png?token=GHSAT0AAAAAAC36ATTACZTXKOL36BVFY7NMZ3YUFVA></div>
+
+
+
+
+
+
+
+
 
 
 ## 📜 Insignias  
