@@ -17,7 +17,7 @@ public class ValidacionTopicoActivo implements ValidadorTopicos {
     @Autowired
     private UsuarioRepository usuarioRepository;
 
-
+    @Override
     public void validar(DatosRegistroTopico datos) {
 
         if (datos.idUsuario() == null) {
