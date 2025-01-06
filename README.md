@@ -1,16 +1,16 @@
 ##      ForoHub Recargado con jQuery personalizadas para estadísticas
-<div ><img src="https://raw.githubusercontent.com/DiegoaMT13/Reto-foro-hub/refs/heads/main/src/main/java/com/foro_hub/Reto/foro/hub/img/portada.png?token=GHSAT0AAAAAAC36ATTBGWL6E2VXAAU6MT5SZ34DTTQ" width="600"/></div>
-- Proyecto para el programa ONE-Backend. La app está desarrollada en Java, enfocado en la creación de un tópico. Se basa en la creación de preguntas consultas de los usuarios los cuales serán autenticados y con autorizaciones según su perfil según las reglas de negocio, de este modo este foro contiene Query las cuales te brindaran estadísticas del mismo.
+<div align="center" ><img src="https://raw.githubusercontent.com/DiegoaMT13/Reto-foro-hub/refs/heads/main/src/main/java/com/foro_hub/Reto/foro/hub/img/portada.png" width="600"/></div>
+- Proyecto para el programa ONE-Backend. La app está desarrollada en Java, enfocado en la creación de un tópico. Se basa en la formulación de preguntas, consultas de los usuarios los cuales serán autenticados y autorizados según su perfil y las reglas de negocio, de este modo este foro contiene Query personalizadas las cuales te brindaran estadísticas del mismo.
 
 
 
 
-
+---
 - Se caracteriza por Autenticación y autorización.
 - Se caracteriza por sus reglas de negocio o validaciones.
 - Se caracteriza por sus test automaticos.
 - Diagrama base de datos ForoHud.
-<div ><img src="https://raw.githubusercontent.com/DiegoaMT13/Reto-foro-hub/refs/heads/main/src/main/java/com/foro_hub/Reto/foro/hub/img/img.png?token=GHSAT0AAAAAAC36ATTB7HSWLIO2R3CVMYESZ34DJMA" width="200"/></div>
+<div align="center" ><img src="https://raw.githubusercontent.com/DiegoaMT13/Reto-foro-hub/refs/heads/main/src/main/java/com/foro_hub/Reto/foro/hub/img/img.png" width="200"/></div>
 
 
 
@@ -22,7 +22,7 @@
 
 
 ## 📜 Insignias  
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)  
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)  
 
 ---
 - Lo primero es descargar la APP.
@@ -31,18 +31,18 @@
 
 ####git clone -- Url de la APP
 (https://github.com/DiegoaMT13/Reto-foro-hub.git)
-
+---
 **La podrás ejecutar la APP a través IntelliJ IDEA**
 <div align="center"><img src="https://d3v6byorcue2se.cloudfront.net/wp-content/uploads/2018/09/logoIntelliJ-IDEA.png" width="200"/></div>
 Es un entorno de desarrollo integrado con reconocimiento de contexto para trabajar con Java y otros lenguajes que se ejecutan en JVM, como Kotlin, Scala y Groovy. Un punto importante a considerar al crear código es la elección del IDE
-
+--
 Reconociendo la App
 
 
 Encontraras una rama de carpetas abre y ejecuta RetoForoHubApplication
-
+---
 **La podrás ejecutar la APP a través IntelliJ IDEA**
-<div ><img src="https://raw.githubusercontent.com/DiegoaMT13/Reto-foro-hub/refs/heads/main/src/main/java/com/foro_hub/Reto/foro/hub/img/App.png?token=GHSAT0AAAAAAC36ATTB4SC55RISBM7GHT5OZ34DREQ" width="200"/></div>
+<div align="center" ><img src="https://raw.githubusercontent.com/DiegoaMT13/Reto-foro-hub/refs/heads/main/src/main/java/com/foro_hub/Reto/foro/hub/img/App.png" width="200"/></div>
 
 
 ### Funcionalidades de la APP
@@ -59,9 +59,11 @@ En esta app te encuentras con cinco carpetas.
 Con sus respectivos GET, POST, PUT, and DELETE 
 
 En de la rama encontraras la carpeta insomnia con el Har o Json.
-<div ><img src="https://raw.githubusercontent.com/DiegoaMT13/Reto-foro-hub/refs/heads/main/src/main/java/com/foro_hub/Reto/foro/hub/img/img_1.png?token=GHSAT0AAAAAAC36ATTARLZ4AB62OHX5STWWZ34DS5Q" width="200"/></div>
+<div align="center" ><img src="https://raw.githubusercontent.com/DiegoaMT13/Reto-foro-hub/refs/heads/main/src/main/java/com/foro_hub/Reto/foro/hub/img/img_1.png?token=GHSAT0AAAAAAC36ATTARLZ4AB62OHX5STWWZ34DS5Q" width="200"/></div>
 
+---
 ### Reglas de Negocio para Usuarios
+
 - Formato de Correo Electrónico
 
  - Toda dirección de correo electrónico registrada debe cumplir con un formato válido.
@@ -81,8 +83,8 @@ Estado del Usuario
 - Existencia del Usuario
 
  - Antes de realizar un registro o acción, el sistema debe verificar que el usuario exista en la base de datos.
- 
-###Reglas de Negocio para Tópicos
+ ---
+### Reglas de Negocio para Tópicos
 
 - Título de Tópico Único por Usuario
 
@@ -96,7 +98,7 @@ Restricción de Registro por Curso
 
  - Solo los usuarios activos pueden registrar nuevos tópicos.
 Si un usuario está inactivo o excluido, el sistema debe impedir el registro del tópico.
-
+---
 ### Reglas de Negocio para Respuestas
 
 - Identidad del Usuario
@@ -121,15 +123,17 @@ Cualquier mensaje que exceda esta longitud será rechazado.
 Consideraciones Generales
 
 ### Gestión de Errores:
+
 - Cualquier validación fallida debe generar un mensaje claro para el usuario, indicando el motivo del rechazo.
-
 ### Modularidad:
-- Las validaciones deben implementarse como módulos independientes, reutilizables en diferentes contextos del sistema.
 
-###Prioridad de Validaciones:
+- Las validaciones deben implementarse como módulos independientes, reutilizables en diferentes contextos del sistema.
+### Prioridad de Validaciones:
+
 - El sistema debe ejecutar primero las validaciones más críticas (como la existencia de datos o el estado del usuario) antes de pasar a verificaciones adicionales.
 
-###Escalabilidad:
+### Escalabilidad:
+
 - Las reglas de negocio deben diseñarse de manera que permitan la adición de nuevas validaciones sin afectar las existentes.
 
 
