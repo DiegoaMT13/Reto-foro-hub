@@ -1,6 +1,7 @@
 ##      ForoHub Recargado con jQuery personalizadas para estadísticas
+- Esta foto de Autor desconocido está bajo licencia CC BY-NC![image].
 <div align="center" ><img src="https://raw.githubusercontent.com/DiegoaMT13/Reto-foro-hub/refs/heads/main/src/main/java/com/foro_hub/Reto/foro/hub/img/portada.png" width="600"/></div>
-                           - Esta foto de Autor desconocido está bajo licencia CC BY-NC![image].
+                           
 
 
 - Proyecto para el programa ONE-Backend. La app está desarrollada en Java, enfocado en la creación de un tópico. Se basa en la formulación de preguntas, consultas de los usuarios los cuales serán autenticados y autorizados según su perfil y las reglas de negocio, de este modo este foro contiene Query personalizadas las cuales te brindaran estadísticas del mismo.
